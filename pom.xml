@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.sys-designer</groupId>
+        <artifactId>sys-designer-framework-parent</artifactId>
+        <version>1.0.0</version>
+    </parent>
+
+    <groupId>com.sys-designer</groupId>
+    <artifactId>sys-designer-plugin-notify-email</artifactId>
+    <version>1.0.0</version>
+
+    <name>sys-designer-plugin-notify-email</name>
+    <description>Sys-Designer Plugin Notify Email</description>
+    <url>https://github.com/Sys-Designer/sys-designer-plugin-notify-email</url>
+
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+            <comments>A business-friendly OSS license</comments>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <id>qinjiawang</id>
+            <name>Jia wang Qin</name>
+            <email>1354174190qjw@sina.com</email>
+            <url>https://sys-designer.com</url>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git@github.com:Sys-Designer/sys-designer-plugin-notify-email.git</connection>
+        <developerConnection>scm:git:git@github.com:Sys-Designer/sys-designer-plugin-notify-email.git</developerConnection>
+        <url>https://github.com/Sys-Designer/sys-designer-plugin-notify-email</url>
+        <tag>1.0.0</tag>
+    </scm>
+
+    <properties>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <maven.compiler.encoding>UTF-8</maven.compiler.encoding>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.sys-designer</groupId>
+            <artifactId>sys-designer-framework-spring-boot</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-mail</artifactId>
+        </dependency>
+    </dependencies>
+
+    <build>
+<!--        <plugins>-->
+<!--            <plugin>-->
+<!--                <groupId>org.apache.maven.plugins</groupId>-->
+<!--                <artifactId>maven-gpg-plugin</artifactId>-->
+<!--                <version>3.1.0</version>-->
+<!--                <executions>-->
+<!--                    <execution>-->
+<!--                        <id>sign-artifacts</id>-->
+<!--                        <phase>verify</phase>-->
+<!--                        <goals><goal>sign</goal></goals>-->
+<!--                    </execution>-->
+<!--                </executions>-->
+<!--                <configuration>-->
+<!--                    <defaultKeyring>true</defaultKeyring>-->
+<!--                </configuration>-->
+<!--            </plugin>-->
+<!--            &lt;!&ndash; 1、源码source.jar &ndash;&gt;-->
+<!--            <plugin>-->
+<!--                <groupId>org.apache.maven.plugins</groupId>-->
+<!--                <artifactId>maven-source-plugin</artifactId>-->
+<!--                <version>3.3.1</version>-->
+<!--                <executions><execution><goals><goal>jar-no-fork</goal></goals></execution></executions>-->
+<!--            </plugin>-->
+<!--            &lt;!&ndash; 2、javadoc.jar &ndash;&gt;-->
+
+<!--            <plugin>-->
+<!--                <groupId>org.apache.maven.plugins</groupId>-->
+<!--                <artifactId>maven-javadoc-plugin</artifactId>-->
+<!--                <version>3.7.0</version>-->
+<!--                <executions>-->
+<!--                    <execution>-->
+<!--                        <id>attach-javadocs</id>-->
+<!--                        <goals><goal>jar</goal></goals>-->
+<!--                    </execution>-->
+<!--                </executions>-->
+<!--                <configuration>-->
+<!--                    <encoding>UTF-8</encoding>-->
+<!--                    <docencoding>UTF-8</docencoding>-->
+<!--                    <charset>UTF-8</charset>-->
+<!--                    <additionalJOptions>-->
+<!--                        <additionalJOption>-Xdoclint:none</additionalJOption>-->
+<!--                    </additionalJOptions>-->
+<!--                    <failOnError>false</failOnError>-->
+<!--                    <failOnWarnings>false</failOnWarnings>-->
+<!--                </configuration>-->
+<!--            </plugin>-->
+<!--            &lt;!&ndash;3、GPG签名插件&ndash;&gt;-->
+<!--            <plugin>-->
+<!--                <groupId>org.apache.maven.plugins</groupId>-->
+<!--                <artifactId>maven-gpg-plugin</artifactId>-->
+<!--                <version>3.2.5</version>-->
+<!--                <executions><execution><phase>verify</phase><goals><goal>sign</goal></goals></execution></executions>-->
+<!--            </plugin>-->
+<!--            <plugin>-->
+<!--                <groupId>org.sonatype.central</groupId>-->
+<!--                <artifactId>central-publishing-maven-plugin</artifactId>-->
+<!--                <version>0.9.0</version>-->
+<!--                <extensions>true</extensions>-->
+<!--                <configuration>-->
+<!--                    <publishingServerId>central</publishingServerId>-->
+<!--                    <autoPublish>true</autoPublish>-->
+<!--                </configuration>-->
+<!--            </plugin>-->
+<!--        </plugins>-->
+    </build>
+</project>
