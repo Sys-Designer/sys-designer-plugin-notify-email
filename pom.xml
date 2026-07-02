@@ -7,12 +7,12 @@
     <parent>
         <groupId>com.sys-designer</groupId>
         <artifactId>sys-designer-framework-parent</artifactId>
-        <version>1.0.0</version>
+        <version>1.0.4</version>
     </parent>
 
     <groupId>com.sys-designer</groupId>
     <artifactId>sys-designer-plugin-notify-email</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
 
     <name>sys-designer-plugin-notify-email</name>
     <description>Sys-Designer Plugin Notify Email</description>
